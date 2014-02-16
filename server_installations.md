@@ -5,6 +5,7 @@
 1. `sudo apt-get install vim`
 1. `sudo apt-get install lynx-cur`
 1. `sudo apt-get install python-virtualenv`
+1. `sudo apt-get install gdb`
 
    Many dependencies.
 
@@ -24,9 +25,13 @@
 1. Configure (without the `CFLAGS="-g4"` suggested by Vivek)  and make:
 
         cd Python-3.3.4
-        CFLAGS="-ggdb -gdwarf-4" ./configure --with-pydebug --prefix=$PWD-build
+        CFLAGS="-g3 -ggdb -gdwarf-4" ./configure --with-pydebug --prefix=$PWD-build
         make -j9
         make install
+
+   See the `gcc` man page for information about the flags, starting under `-glevel`. The flag `-g3` means level 3 of `-glevel`: 
+   
+   > Level 3 includes extra information, such as all the macro definitions present in the program. Some debuggers support macro expansion when you use `-g3`.
 
 1. Run using:
 
