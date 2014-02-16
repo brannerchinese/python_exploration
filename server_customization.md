@@ -30,12 +30,12 @@
         usermod -s /bin/bash <user>
 
 1. Edit `~/.ssh/authorized_keys` to allow log-in without password.
-1. Use `vim` as text editor in `.bashrc`:
+1. Use `vim` as text editor in `.bash_profile`:
 
         export EDITOR=vim
         set -o vi
 
-1. Aliases in `.bashrc`
+1. Aliases in `.bash_profile`
 
         alias py='cd ~/Python-3.3.4 ; deactivate ; source v_env3/bin/activate'
 
