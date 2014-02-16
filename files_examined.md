@@ -11,6 +11,7 @@
 1. `Parser/`: parser in C-code
 1. `Python/`: interpreter in C-code; contains one Python file: `makeopcodetargets.py`:
 
-        > Generate C code for the jump table of the threaded code interpreter (for compilers supporting computed gotos or "labels-as-values", such as gcc).
+        > Generate C code for the jump table of the threaded code interpreter
+        (for compilers supporting computed gotos or "labels-as-values", such as gcc).
 
 [end]
