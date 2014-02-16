@@ -35,4 +35,8 @@
         export EDITOR=vim
         set -o vi
 
+1. Aliases in `.bashrc`
+
+        alias py='cd ~/Python-3.3.4 ; deactivate ; source v_env3/bin/activate'
+
 [end]
