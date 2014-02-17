@@ -10,7 +10,7 @@
 
     3. [Introduction](http://tech.blog.aknin.name/2010/04/02/pythons-innards-introduction/) (accessed 20140216).
     3. [Objects 101](http://tech.blog.aknin.name/2010/05/12/pythons-innards-objects-101/) (accessed 20140216).
-    3. [Objects 102](http://tech.blog.aknin.name/2010/05/19/pythons-innards-objects-102/) (accessed 20140216). **See also** [correction](http://tech.blog.aknin.name/2010/05/20/correction-for-pythons-innards-objects-102/)
+    3. [Objects 102](http://tech.blog.aknin.name/2010/05/19/pythons-innards-objects-102/) (accessed 20140216). **See also** [correction](http://tech.blog.aknin.name/2010/05/20/correction-for-pythons-innards-objects-102/) (accessed 20140216).
     3. [Pystate](http://tech.blog.aknin.name/2010/05/26/pythons-innards-pystate/) (accessed 20140216).
     3. [Naming](http://tech.blog.aknin.name/2010/06/05/pythons-innards-naming/) (accessed 20140216).
     3. [Code Objects](http://tech.blog.aknin.name/2010/07/03/pythons-innards-code-objects/) (accessed 20140216).
