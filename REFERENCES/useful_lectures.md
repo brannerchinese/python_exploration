@@ -12,6 +12,7 @@
 1. Ned Batchelder, [A Whirlwind Excursion through Python C Extensions](http://nedbatchelder.com/text/whirlext.html) from PyCon 2009 (c. 40 min.).
 1. Greg Price, [
 Accelerating your Python application: Cython and PyPy](https://speakerdeck.com/gnprice/accelerating-your-python-application-cython-and-pypy) (slideshow).
+1. Alex Golic, [The Python Interpreter is Fun and Not at All Terrifying: Opcodes](http://www.slideshare.net/alexgolec/python-opcodes) (slideshow).
 
 ### Useful
 
