@@ -4,5 +4,6 @@
 
 1. [Pure Python libraries](http://hg.python.org/cpython/file/tip/Lib).
 1. [CPython libraries](http://hg.python.org/cpython/file/tip/Modules).
+1. [C-API](http://docs.python.org/3.3/c-api/index.html).
 
 [end]
