@@ -29,7 +29,7 @@
 
         usermod -s /bin/bash <user>
 
-1. Edit `~/.ssh/authorized_keys` to allow log-in without password.
+1. Edit `~/.ssh/authorized_keys` to allow log-in without password. For ASCII-art representation of host key fingerprint, place `VisualHostKey=yes` into `~/.ssh/config`.
 1. Use `vim` as text editor in `.bash_profile`:
 
         export EDITOR=vim
