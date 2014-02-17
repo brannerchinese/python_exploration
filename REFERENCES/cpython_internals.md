@@ -1,4 +1,4 @@
-## References
+## CPython internals
 
 [edited 20140216]
 
@@ -16,12 +16,5 @@
     3. [Code Objects](http://tech.blog.aknin.name/2010/07/03/pythons-innards-code-objects/) (accessed 20140216).
     3. [Interpreter Stacks](http://tech.blog.aknin.name/2010/07/22/pythons-innards-interpreter-stacks/) (accessed 20140216).
     3. [ceval.c](http://tech.blog.aknin.name/2010/09/02/pythons-innards-hello-ceval-c-2/) (accessed 20140216).
-
- 1. PyPy. 
-
-   2. [OS X download](https://bitbucket.org/pypy/pypy/downloads/pypy-2.2.1-osx64.tar.bz2).
-   2. [Documentation](http://doc.pypy.org/en/latest/).
-   2. [Overview lectures](http://pypy.org/talk/stanford-ee380-2011/talk.html) (accessed 20140211).
-   2. [PyPy status blog](http://morepypy.blogspot.com/) (accessed 20140211).
 
 [end]
