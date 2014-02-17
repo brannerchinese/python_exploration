@@ -11,5 +11,6 @@
 ### Other programs
 
 1. `build-essential`: Informational list of build-essential packages.
+1. `ssh-agent` (execute as ``eval `ssh-agent -s```) and `ssh-add`
 
 [end]
