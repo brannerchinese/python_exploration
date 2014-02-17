@@ -6,6 +6,7 @@
 1. `sudo apt-get install lynx-cur`
 1. `sudo apt-get install python-virtualenv`
 1. `sudo apt-get install gdb`
+1. `sudo apt-get install git`
 
    Many dependencies.
 
@@ -37,5 +38,6 @@
 
         $PWD-build/bin/python3
 
+   An alias to `gdb` running this version of Python has been placed in `.bash_profile`:  `alias py='gdb --args ~/Python-3.3.4-build/bin/python3'`
 
 [end]
