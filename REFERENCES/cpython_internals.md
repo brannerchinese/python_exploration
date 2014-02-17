@@ -5,7 +5,8 @@
 1. Blog matter
 
   2. [Allison Kaptur's notes on the Python interpreter](http://akaptur.github.io/) (accessed 20140210).
-  2. [Senthil Kumaran's notes on Python internals](http://www.uthcode.com/pythondesign.html) (accessed 20140216).
+  2. [Eli Bendersky's notes on Python internals](http://eli.thegreenplace.net/category/programming/python/python-internals/) (accessed 20140216).
+  2. [Senthil Kumaran's notes on Python internals](http://www.uthcode.com/pythondesign.html) (accessed 20140216) (based on Yaniv Aknin's material).
   2. [Yaniv Aknin's notes on "Python innards"](http://tech.blog.aknin.name/category/my-projects/pythons-innards/):
 
     3. [Introduction](http://tech.blog.aknin.name/2010/04/02/pythons-innards-introduction/) (accessed 20140216).
