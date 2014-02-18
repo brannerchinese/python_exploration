@@ -1,6 +1,6 @@
 ## Unix tools
 
-[edited 20140216]
+[edited 20140217]
 
 ### Apt-get etc.
 
@@ -12,5 +12,8 @@
 
 1. `build-essential`: Informational list of build-essential packages.
 1. `ssh-agent` (execute as ``eval `ssh-agent -s` ``) and `ssh-add`
+1. `xargs`: build and execute command lines from standard input
+
+  2. `-print0`: print the full file name on the standard output,  followed by  a  null  character  (instead  of  the newline character that `-print` uses). This option corresponds  to the `-0` option of `xargs`.
 
 [end]

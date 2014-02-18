@@ -4,7 +4,9 @@
 
 ### To run
 
-    gdb --args .../bin/python3
+Within `Python-3.3.4-build/`:
+
+    gdb --args /bin/python3
 
 An alias to this, `py`, has been placed in `.bash-profile`.
 
