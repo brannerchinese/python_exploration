@@ -115,9 +115,10 @@ True
 False
 >>>> id(x[:]) == id(bytes(123))
 False
+>>>> y = x[:]
 >>>> id(x) == id(y)
-False
+True
 >>>> id(y) == id(bytes(123))
 False
->>>> x
+>>>> 
 ~~~
