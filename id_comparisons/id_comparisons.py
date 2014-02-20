@@ -19,38 +19,69 @@ bases = [('list', '[1, 2, 3]'),
 cases = [
         'eval(base) == eval(base)',
         'eval(base) == eval(base)[:]',
+        'eval(base) == eval(base)[:][:]',
         'id(eval(base)) == id(eval(base))',
         'id(eval(base)) == id(eval(base)[:])',
+        'id(eval(base)) == id(eval(base)[:][:])',
         'id(eval(base)[:]) == id(eval(base)[:])',
+        'id(eval(base)[:]) == id(eval(base)[:][:])',
 #        'x == x[:]',
         'id(x) == id(x[:])',
         'id(x[:]) == id(x)',
         'id(x[:]) == id(x[:])',
+        'id(x) == id(x[:][:])',
         'id(x) == id(eval(base))',
         'id(eval(base)) == id(x)',
         'id(x[:]) == id(eval(base))',
         'id(x[:]) == id(eval(base)[:])',
+        'id(x[:]) == id(eval(base)[:][:])',
         'id(x) == id(y)',
         'id(x[:]) == id(y[:])',
         'id(y) == id(eval(base))',
         ]
-raw_cases = [
+raw_cases_list = [
         '[1, 2, 3] == [1, 2, 3]',
         '[1, 2, 3] == [1, 2, 3][:]',
+        '[1, 2, 3] == [1, 2, 3][:][:]',
         'id([1, 2, 3]) == id([1, 2, 3])',
         'id([1, 2, 3]) == id([1, 2, 3][:])',
+        'id([1, 2, 3]) == id([1, 2, 3][:][:])',
         'id([1, 2, 3][:]) == id([1, 2, 3][:])',
 #        'x == x[:]',
-        'id(x) == id(x[:])',
-        'id(x[:]) == id(x)',
-        'id(x[:]) == id(x[:])',
+#        'id(x) == id(x[:])',
+#        'id(x[:]) == id(x)',
+#        'id(x[:]) == id(x[:])',
+#        'id(x[:]) == id(x[:][:])',
         'id(x) == id([1, 2, 3])',
         'id([1, 2, 3]) == id(x)',
         'id(x[:]) == id([1, 2, 3])',
         'id(x[:]) == id([1, 2, 3][:])',
+        'id(x[:]) == id([1, 2, 3][:][:])',
         'id(x) == id(y)',
         'id(x[:]) == id(y[:])',
         'id(y) == id([1, 2, 3])'
+        ]
+raw_cases_tuples = [
+        '(1, 2, 3) == (1, 2, 3)',
+        '(1, 2, 3) == (1, 2, 3)[:]',
+        '(1, 2, 3) == (1, 2, 3)[:][:]',
+        'id((1, 2, 3)) == id((1, 2, 3))',
+        'id((1, 2, 3)) == id((1, 2, 3)[:])',
+        'id((1, 2, 3)) == id((1, 2, 3)[:][:])',
+        'id((1, 2, 3)[:]) == id((1, 2, 3)[:])',
+#        'x == x[:]',
+#        'id(x) == id(x[:])',
+#        'id(x[:]) == id(x)',
+#        'id(x[:]) == id(x[:])',
+#        'id(x[:]) == id(x[:][:])',
+        'id(x) == id((1, 2, 3))',
+        'id((1, 2, 3)) == id(x)',
+        'id(x[:]) == id((1, 2, 3))',
+        'id(x[:]) == id((1, 2, 3)[:])',
+        'id(x[:]) == id((1, 2, 3)[:][:])',
+        'id(x) == id(y)',
+        'id(x[:]) == id(y[:])',
+        'id(y) == id((1, 2, 3))'
         ]
 
 def main():
@@ -64,9 +95,13 @@ def main():
     print('\nRaw lists')
     x = [1, 2, 3]
     y = x[:]
-    for case in raw_cases:
+    for case in raw_cases_list:
         print(case, eval(case))
-
+    print('\nRaw tuples')
+    x = (1, 2, 3)
+    y = x[:]
+    for case in raw_cases_tuples:
+        print(case, eval(case))
     return x, y
 
 if __name__ == '__main__':
