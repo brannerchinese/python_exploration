@@ -1,7 +1,9 @@
 #!/usr/bin/python
 # id_comparisons.py
 # David Prager Branner
-# 20140219
+# 20140220, works
+
+"""To STDOUT print the results of a number of tests of `id()` behavior."""
 
 import array
 
@@ -102,6 +104,7 @@ def main():
     y = x[:]
     for case in raw_cases_tuples:
         print(case, eval(case))
+    # Return the variables so that they are not garbage-collected before now.
     return x, y
 
 if __name__ == '__main__':
