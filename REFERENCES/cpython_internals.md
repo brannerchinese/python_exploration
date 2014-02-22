@@ -1,12 +1,13 @@
 ## CPython internals
 
-[edited 20140216]
+[edited 20140222]
 
 1. Blog matter
 
   2. [Allison Kaptur's notes on the Python interpreter](http://akaptur.github.io/) (accessed 20140210).
   2. [Eli Bendersky's notes on Python internals](http://eli.thegreenplace.net/category/programming/python/python-internals/) (accessed 20140216). [Single-file PDF](https://github.com/brannerchinese/cpython_exploration/blob/master/REFERENCES/Eli_Bendersky_Python_internals_20140216.pdf) in this repository.
   2. [Senthil Kumaran's notes on Python internals](http://www.uthcode.com/pythondesign.html) (accessed 20140216) (based on Yaniv Aknin's material). [Single-file PDF](https://github.com/brannerchinese/cpython_exploration/blob/master/REFERENCES/Senthil_Kumaran_Python_Design_20140216.pdf) in this repository.
+  2. [Jonathan Vogel's "Patching Function Bytecode with Python"](http://www.jonathon-vogel.com/posts/patching_function_bytecode_with_python/) (accessed 20140222).
   2. [Yaniv Aknin's notes on "Python innards"](http://tech.blog.aknin.name/category/my-projects/pythons-innards/):
 
     3. [Introduction](http://tech.blog.aknin.name/2010/04/02/pythons-innards-introduction/) (accessed 20140216).
