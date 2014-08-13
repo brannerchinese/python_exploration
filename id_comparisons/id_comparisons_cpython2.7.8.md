@@ -1,10 +1,11 @@
-~~~
-Jython 2.7b2 (default:a5bc0032cf79+, Apr 22 2014, 21:20:17) 
-[Java HotSpot(TM) 64-Bit Server VM (Oracle Corporation)] on java1.7.0_51
+Python 2.7.8 (default, Jul  2 2014, 10:14:46) 
+[GCC 4.2.1 Compatible Apple LLVM 5.1 (clang-503.0.40)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
 >>> [1, 2, 3] == [1, 2, 3][:] 
 True
 >>> id([1, 2, 3]) == id([1, 2, 3][:])
+False
+>>> id([1, 2, 3][:]) == id([1, 2, 3][:])
 False
 >>> x = [1, 2, 3]
 >>> x[:]
@@ -14,16 +15,16 @@ True
 >>> id(x) == id(x[:])
 False
 >>> id(x[:]) == id(x[:])
-False
+True
 >>> id(x) == id([1, 2, 3])
 False
 >>> id(x[:]) == id([1, 2, 3])
-False
+True
 >>> y = x[:]
 >>> id(x) == id(y)
 False
 >>> id(x[:]) == id(y[:])
-False
+True
 >>> id(y) == id([1, 2, 3])
 False
 >>> # Tuples
@@ -39,45 +40,45 @@ False
 >>> x == x[:]
 True
 >>> id(x) == id(x[:])
-False
+True
 >>> id(x[:]) == id(x[:])
-False
+True
 >>> id(x) == id((1, 2, 3))
 False
 >>> id(x[:]) == id((1, 2, 3))
 False
 >>> y = x[:]
 >>> id(x) == id(y)
-False
+True
 >>> id(x[:]) == id(y[:])
-False
+True
 >>> id(y) == id((1, 2, 3))
 False
 >>> # Strings
 >>> '123' == '123'[:]
 True
 >>> id('123') == id('123'[:])
-False
+True
 >>> id('123'[:]) == id('123'[:])
-False
+True
 >>> x = '123'
 >>> x[:]
 '123'
 >>> x == x[:]
 True
 >>> id(x) == id(x[:])
-False
+True
 >>> id(x) == id('123')
-False
+True
 >>> id(x[:]) == id(x[:])
-False
+True
 >>> id(x[:]) == id('123')
-False
+True
 >>> y = x[:]
 >>> id(x) == id(y)
-False
+True
 >>> id(y) == id('123')
-False
+True
 >>> # array.array
 >>> import array
 >>> array.array('i', [1, 2, 3]) == array.array('i', [1, 2, 3])[:]
@@ -94,43 +95,43 @@ True
 >>> id(x) == id(x[:])
 False
 >>> id(x[:]) == id(x[:])
-False
+True
 >>> id(x) == id(array.array('i', [1, 2, 3]))
 False
 >>> id(x[:]) == id(array.array('i', [1, 2, 3]))
-False
+True
 >>> y = x[:]
 >>> id(x) == id(y)
 False
 >>> id(x[:]) == id(y[:])
-False
+True
 >>> id(y) == id(array.array('i', [1, 2, 3]))
 False
 >>> # bytes objects
 >>> bytes(123) == bytes(123)[:]
 True
 >>> id(bytes(123)) == id(bytes(123)[:])
-False
+True
 >>> id(bytes(123)[:]) == id(bytes(123)[:])
-False
+True
 >>> x = bytes(123)
 >>> x[:]
 '123'
 >>> x == x[:]
 True
 >>> id(x) == id(x[:])
-False
+True
 >>> id(x[:]) == id(x[:])
-False
+True
 >>> id(x) == id(bytes(123))
 False
 >>> id(x[:]) == id(bytes(123))
 False
 >>> y = x[:]
 >>> id(x) == id(y)
-False
+True
 >>> id(x[:]) == id(y[:])
-False
+True
 >>> id(y) == id(bytes(123))
 False
-~~~
+>>> 
