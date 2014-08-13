@@ -4,7 +4,9 @@
 
 1. April Fool's Day joke, 2009, included proposed substitution of `<>` for `!=`:
 
-        > The `!=` inequality operator in Python 3.0 was a horrible, finger pain inducing mistake; [Barry Warsaw] reinstates the `<>`.
+        ```quote
+The `!=` inequality operator in Python 3.0 was a horrible, finger pain inducing mistake; [Barry Warsaw] reinstates the `<>`.
+        ```
 
 1. "BDFL": Guido van Rossum ("Benevolent Dictator for Life")
 1. `x, y = y, x` variable swapping is done internally using not one but two temporary variables.
