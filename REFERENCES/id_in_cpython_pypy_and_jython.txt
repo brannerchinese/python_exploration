@@ -1,0 +1,6 @@
+"Return the “identity” of an object. This is an integer which is guaranteed to be unique and constant for this object during its lifetime. Two objects with non-overlapping lifetimes may have the same id() value. CPython implementation detail: This is the address of the object in memory." https://docs.python.org/2.7/library/functions.html?#id
+
+"Using the default GC (called minimark), the built-in function id() [of PyPy] works like it does in CPython. With other GCs it returns numbers that are not real addresses (because an object can move around several times) and calling it a lot can lead to performance problem." http://pypy.readthedocs.org/en/latest/cpython_differences.html
+
+"Return the “identity” of an object. This is an integer (or long integer) which is guaranteed to be unique and constant for this object during its lifetime. Two objects with non-overlapping lifetimes may have the same id() value. (Implementation note: this is the address of the object.)" http://www.jython.org/docs/library/functions.html
+

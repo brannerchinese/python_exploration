@@ -120,3 +120,54 @@ def test_array2():
 
 test_list2()
 test_array2()
+
+
+################
+
+import time
+def test_list3():
+    print id([1, 2, 3][:]) == id([1, 2, 3][:])
+    y1 = [1, 2, 3][:]
+    y2 = [1, 2, 3][:]
+    print id(y1) == id(y2)
+    print id(y1) == id(y1)
+    print id([1, 2, 3][:])
+    time.sleep(.5)
+    print id([1, 2, 3][:])
+    time.sleep(.5)
+    print id([1, 2, 3][:])
+    time.sleep(.5)
+    print id([1, 2, 3][:])
+    time.sleep(.5)
+    print id([1, 2, 3][:])
+    time.sleep(.5)
+    print id([1, 2, 3][:])
+    time.sleep(.5)
+    print id([1, 2, 3][:])
+    time.sleep(.5)
+    print id([1, 2, 3][:])
+
+def test_array3():
+    print id(array.array('i', [1, 2, 3])[:]) == id(array.array('i', [1, 2, 3])[:])
+    y1 = array.array('i', [1, 2, 3])[:]
+    y2 = array.array('i', [1, 2, 3])[:]
+    print id(y1) == id(y2)
+    print id(y1) == id(y1)
+    print id(array.array('i', [1, 2, 3])[:])
+    time.sleep(.5)
+    print id(array.array('i', [1, 2, 3])[:])
+    time.sleep(.5)
+    print id(array.array('i', [1, 2, 3])[:])
+    time.sleep(.5)
+    print id(array.array('i', [1, 2, 3])[:])
+    time.sleep(.5)
+    print id(array.array('i', [1, 2, 3])[:])
+    time.sleep(.5)
+    print id(array.array('i', [1, 2, 3])[:])
+    time.sleep(.5)
+    print id(array.array('i', [1, 2, 3])[:])
+    time.sleep(.5)
+    print id(array.array('i', [1, 2, 3])[:])
+
+test_list3()
+test_array3()
