@@ -4,7 +4,9 @@ def test(choice):
             'tuple': (1, 2, 3),
             'string': '123',
             'array': array.array('i', [1, 2, 3]),
-            'bytes': bytes(123)
+            'bytes': bytes(123),
+            'buffer': buffer('123'[:]),
+            'bytearray': bytearray('123'[:])
             }
     x = choices[choice]
     print id(x[:]) == id(x[:])
@@ -22,6 +24,8 @@ test('array')
 test('tuple')
 test('string')
 test('bytes')
+test('buffer')
+test('bytearray')
 
 ################
 
@@ -85,6 +89,34 @@ test_tuple()
 test_array()
 test_string()
 test_bytes()
+
+
+def test_buffer():
+    print id(buffer('123'[:])) == id(buffer('123'[:]))
+    y1 = buffer('123'[:])
+    y2 = buffer('123'[:])
+    print id(y1) == id(y2)
+    print id(y1) == id(y1)
+    print id(buffer('123'[:]))
+    print id(buffer('123'[:]))
+    print id(buffer('123'[:]))
+    print id(buffer('123'[:]))
+
+
+def test_bytearray():
+    print id(bytearray('123'[:])) == id(bytearray('123'[:]))
+    y1 = bytearray('123'[:])
+    y2 = bytearray('123'[:])
+    print id(y1) == id(y2)
+    print id(y1) == id(y1)
+    print id(bytearray('123'[:]))
+    print id(bytearray('123'[:]))
+    print id(bytearray('123'[:]))
+    print id(bytearray('123'[:]))
+
+
+test_buffer()
+test_bytearray()
 
 ################
 
